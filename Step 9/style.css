@@ -1,0 +1,35 @@
+/* @font-face loads a self-hosted font */
+@font-face {
+	font-family: harber-trial;
+	src: url(fonts/HARBER-trial.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: honeydew;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body .slider-box {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid black;
+	background: lavenderblush;
+}
+
+body .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 65%;
+	font-size: 30px;
+	/* use four font axes, `wght` (ranges from 1 to 20), `slnt' (ranges from -10 to 10), `VVLM` (ranges from -10 to 10), `NSSS` (ranges from -10 to 10), */
+	font-family: 'harber-trial', sans-serif;
+	font-variation-settings: "wght" 1, "slnt" 0, "VVLM" 0, "NSSS" 0;
+}

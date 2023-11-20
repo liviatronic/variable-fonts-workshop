@@ -1,0 +1,37 @@
+/* @font-face loads a self-hosted font */
+@font-face {
+	font-family: harber-trial;
+	src: url(fonts/HARBER-trial.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: honeydew;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body .slider-box {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid black;
+	background: lavenderblush;
+}
+
+body .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 65%;
+	font-size: 30px;
+	/* this font has a weight axis called `wght` whose value ranges from 1 to 20
+	with the normal `font-weight` attribute CSS only allows for weights to be adjusted in steps of 100
+	using this font's axis allows the weight to be adjusted in increments of 1 */
+	font-family: 'harber-trial', sans-serif;
+	font-variation-settings: "wght" 1;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- load jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Variable fonts 9</title>
+</head>
+
+<body>
+    <!-- add a slider to control two axes of the variable font -->
+    <div class="slider-box">
+
+        <div class="slider-wrap wght">
+            <!-- add a label for slider 1 -->
+            <!-- initial value is set to the lowest value in the axis's range -->
+            <p>Weight: <span class="val">1</span></p>
+
+            <!-- add a slider to control the font weight -->
+            <!-- min and max values come from the variable font documentation -->
+            <input type="range" min="1" max="20" step="1" value="1" class="slider" id="wght">
+        </div>
+
+        <div class="slider-wrap slnt">
+            <!-- add a label for slider 2 -->
+            <!-- initial value is set to the lowest value in the axis's range -->
+            <p>Slant: <span class="val">0</span></p>
+
+            <!-- add a slider to control the font width -->
+            <input type="range" min="-10" max="10" step=".1" value="0" class="slider" id="slnt">
+        </div>
+
+        <div class="slider-wrap vvlm">
+            <!-- add a label for slider 3 -->
+            <!-- initial value is set to the lowest value in the axis's range -->
+            <p>Volume: <span class="val">0</span></p>
+
+            <!-- add a slider to control the font volume -->
+            <input type="range" min="-10" max="10" step=".1" value="0" class="slider" id="vvlm">
+        </div>
+
+        <div class="slider-wrap nsss">
+            <!-- add a label for slider 4 -->
+            <!-- initial value is set to the lowest value in the axis's range -->
+            <p>Noise: <span class="val">0</span></p>
+
+            <!-- add a slider to control the font noise -->
+            <input type="range" min="-10" max="10" step=".1" value="0" class="slider" id="nsss">
+        </div>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed imperdiet eros. Aenean sed mauris non mi
+            bibendum mollis sit amet id diam. Pellentesque vestibulum erat sed facilisis varius. Vivamus lobortis non
+            mauris eget eleifend. Etiam vel ex venenatis, suscipit magna interdum, egestas massa. Morbi pharetra dictum
+            lectus, et posuere massa posuere quis. Suspendisse eu ante sed quam ullamcorper elementum.</p>
+
+        <p>Morbi lacinia nec erat quis molestie. Donec semper tincidunt dictum. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Vivamus vitae fringilla metus. In hac habitasse
+            platea dictumst. Sed faucibus eros velit, ut dignissim enim consectetur quis. Praesent euismod auctor lorem
+            id tempor. Mauris sapien tortor, consectetur vel odio ut, gravida feugiat metus. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce eget hendrerit erat, hendrerit
+            tristique felis. Pellentesque cursus, ex ac tristique pretium, metus dolor lobortis nisi, in euismod lectus
+            quam eu turpis.</p>
+    </div>
+</body>
+
+</html>
