@@ -49,7 +49,7 @@ $(document).ready(function () {
         nsss = nsss
 
         // updates the text showing next to the slider
-        $('.slider-wrap.slnt .val').text(vvlm);
+        $('.slider-wrap.VVLM .val').text(vvlm);
 
         // updates the font-variation-settings CSS with the slider value
         $('.content').css("font-variation-settings", `"wght" ${wght}, "slnt" ${slnt}, "VVLM" ${vvlm}, "NSSS" ${nsss}`);
@@ -65,7 +65,7 @@ $(document).ready(function () {
         slnt = slnt
 
         // updates the text showing next to the slider
-        $('.slider-wrap.slnt .val').text(nsss);
+        $('.slider-wrap.nsss .val').text(nsss);
 
         // updates the font-variation-settings CSS with the slider value
         $('.content').css("font-variation-settings", `"wght" ${wght}, "slnt" ${slnt}, "VVLM" ${vvlm}, "NSSS" ${nsss}`);
